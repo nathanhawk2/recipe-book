@@ -6,7 +6,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Signup from './pages/Signup';
@@ -60,20 +60,22 @@ function App() {
           <>
             <Header />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-              <Route path="/create" element={<Create />} />
-              <Route path="/me" element={<Profile />} />
-              <Route path="/users/:id" element={<Profile />} />
-              <Route path='/posts/:id' element={<Post />} />
-              <Route path='/appetizers' element={<Apps />} />
-              <Route path='/breakfast' element={<Breakfast />} />
-              <Route path='/lunch' element={<Lunch />} />
-              <Route path='/snacks' element={<Snacks />} />
-              <Route path='/dinner' element={<Dinner />} />
-              <Route path='/desserts' element={<Desserts />} />
-              <Route path='/cocktails' element={<Cocktails />} />
+              <Route path="/" element={<Home />}></Route>
+              {/* put in between the name? */}
+              {/* this is where the side bar needs to show up to direct, this is the layout page */}
+              <Route path="/login" element={<Login />} ></Route>
+              <Route path="/signup" element={<Signup />} ></Route>
+              <Route path="/create" element={<Create />} ></Route>
+              <Route path="/me" element={<Profile />} ></Route>
+              <Route path="/users/:id" element={<Profile />} ></Route>
+              <Route path='/posts/:id' element={<Post />} ></Route>
+              <Route path='/appetizers' element={<Apps />} ></Route>
+              <Route path='/breakfast' element={<Breakfast />} ></Route>
+              <Route path='/lunch' element={<Lunch />} ></Route>
+              <Route path='/snacks' element={<Snacks />} ></Route>
+              <Route path='/dinner' element={<Dinner />} ></Route>
+              <Route path='/desserts' element={<Desserts />} ></Route>
+              <Route path='/cocktails' element={<Cocktails />} ></Route>
             </Routes>
             <Footer />
           </>
