@@ -1,0 +1,21 @@
+[
+  {
+  "title": "cars",
+  "body":"New Hellcat go vroom",
+  "comments":{
+    "body":"Hellcats arent cool, get a tesla."
+  }
+},
+{
+  "title":"travel",
+  "body":"I would love to travel to London. The sightseeing would be great and the London accent is amazing "
+},
+{
+  "title":"motorcyles",
+  "body":"The Kawasaki Ninja 400 is a great beginner bike for anyone looking to start riding motorcycles."
+},
+{
+  "title":"motorcyles",
+  "body":"Aprilia makes great bikes with low end torque"
+}
+]
