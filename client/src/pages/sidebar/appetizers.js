@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { QUERY_USERS } from '../utils/queries';
+import { QUERY_USERS } from '../../utils/queries';
 import { FETCH_POSTS_QUERY } from '../../utils/queries';
 
 

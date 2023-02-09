@@ -1,4 +1,7 @@
 import React from 'react';
+import { useQuery } from '@apollo/client';
+import { QUERY_USERS } from '../../utils/queries';
+import { FETCH_POSTS_QUERY } from '../../utils/queries';
 
 function Lunch() {
   const { loading, data } = useQuery(QUERY_USERS);
